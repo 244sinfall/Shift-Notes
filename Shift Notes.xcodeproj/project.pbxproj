@@ -7,9 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F2EDF3E27A79C88005E9FCF /* NotesTitlesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2EDF3D27A79C88005E9FCF /* NotesTitlesCell.swift */; };
+		8F2EDF3F27A79C88005E9FCF /* NotesTitlesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2EDF3D27A79C88005E9FCF /* NotesTitlesCell.swift */; };
+		8F2EDF4027A79C88005E9FCF /* NotesTitlesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2EDF3D27A79C88005E9FCF /* NotesTitlesCell.swift */; };
+		8F2EDF4227A79DC3005E9FCF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2EDF4127A79DC3005E9FCF /* MainViewController.swift */; };
+		8F2EDF4327A79DC3005E9FCF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2EDF4127A79DC3005E9FCF /* MainViewController.swift */; };
+		8F2EDF4427A79DC3005E9FCF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2EDF4127A79DC3005E9FCF /* MainViewController.swift */; };
+		8F2EDF4627A79E07005E9FCF /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2EDF4527A79E07005E9FCF /* MainTableViewController.swift */; };
+		8F2EDF4727A79E07005E9FCF /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2EDF4527A79E07005E9FCF /* MainTableViewController.swift */; };
+		8F2EDF4827A79E07005E9FCF /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2EDF4527A79E07005E9FCF /* MainTableViewController.swift */; };
+		8F6FB99927A7960E004A577E /* FocusStart_iOS_TestTask_v4.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8F6FB99827A7960E004A577E /* FocusStart_iOS_TestTask_v4.pdf */; };
 		8FBD7E0F27A792DD0084D40A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBD7E0E27A792DD0084D40A /* AppDelegate.swift */; };
 		8FBD7E1127A792DD0084D40A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBD7E1027A792DD0084D40A /* SceneDelegate.swift */; };
-		8FBD7E1327A792DD0084D40A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBD7E1227A792DD0084D40A /* ViewController.swift */; };
 		8FBD7E1627A792DD0084D40A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FBD7E1427A792DD0084D40A /* Main.storyboard */; };
 		8FBD7E1927A792DD0084D40A /* Shift_Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8FBD7E1727A792DD0084D40A /* Shift_Notes.xcdatamodeld */; };
 		8FBD7E1B27A792DF0084D40A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FBD7E1A27A792DF0084D40A /* Assets.xcassets */; };
@@ -17,6 +26,9 @@
 		8FBD7E2927A792DF0084D40A /* Shift_NotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBD7E2827A792DF0084D40A /* Shift_NotesTests.swift */; };
 		8FBD7E3327A792DF0084D40A /* Shift_NotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBD7E3227A792DF0084D40A /* Shift_NotesUITests.swift */; };
 		8FBD7E3527A792DF0084D40A /* Shift_NotesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBD7E3427A792DF0084D40A /* Shift_NotesUITestsLaunchTests.swift */; };
+		8FC8248127A7F4320052FFBB /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC8247F27A7F4310052FFBB /* Note+CoreDataClass.swift */; };
+		8FC8248227A7F4320052FFBB /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC8247F27A7F4310052FFBB /* Note+CoreDataClass.swift */; };
+		8FC8248327A7F4320052FFBB /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC8247F27A7F4310052FFBB /* Note+CoreDataClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +49,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F2EDF3D27A79C88005E9FCF /* NotesTitlesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NotesTitlesCell.swift; path = UI/NotesTitlesCell.swift; sourceTree = "<group>"; };
+		8F2EDF4127A79DC3005E9FCF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = UI/MainViewController.swift; sourceTree = "<group>"; };
+		8F2EDF4527A79E07005E9FCF /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainTableViewController.swift; path = UI/MainTableViewController.swift; sourceTree = "<group>"; };
+		8F6FB99827A7960E004A577E /* FocusStart_iOS_TestTask_v4.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = FocusStart_iOS_TestTask_v4.pdf; path = "Shift Notes/Doc/FocusStart_iOS_TestTask_v4.pdf"; sourceTree = SOURCE_ROOT; };
 		8FBD7E0B27A792DC0084D40A /* Shift Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shift Notes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FBD7E0E27A792DD0084D40A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FBD7E1027A792DD0084D40A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8FBD7E1227A792DD0084D40A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8FBD7E1527A792DD0084D40A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8FBD7E1827A792DD0084D40A /* Shift_Notes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shift_Notes.xcdatamodel; sourceTree = "<group>"; };
 		8FBD7E1A27A792DF0084D40A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +66,7 @@
 		8FBD7E2E27A792DF0084D40A /* Shift NotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shift NotesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FBD7E3227A792DF0084D40A /* Shift_NotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shift_NotesUITests.swift; sourceTree = "<group>"; };
 		8FBD7E3427A792DF0084D40A /* Shift_NotesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shift_NotesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8FC8247F27A7F4310052FFBB /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Note+CoreDataClass.swift"; path = "Shift Notes/DataModel/Note+CoreDataClass.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +97,7 @@
 		8FBD7E0227A792DC0084D40A = {
 			isa = PBXGroup;
 			children = (
+				8FC8247F27A7F4310052FFBB /* Note+CoreDataClass.swift */,
 				8FBD7E0D27A792DC0084D40A /* Shift Notes */,
 				8FBD7E2727A792DF0084D40A /* Shift NotesTests */,
 				8FBD7E3127A792DF0084D40A /* Shift NotesUITests */,
@@ -103,12 +120,14 @@
 			children = (
 				8FBD7E0E27A792DD0084D40A /* AppDelegate.swift */,
 				8FBD7E1027A792DD0084D40A /* SceneDelegate.swift */,
-				8FBD7E1227A792DD0084D40A /* ViewController.swift */,
 				8FBD7E1427A792DD0084D40A /* Main.storyboard */,
+				8F2EDF4527A79E07005E9FCF /* MainTableViewController.swift */,
 				8FBD7E1A27A792DF0084D40A /* Assets.xcassets */,
 				8FBD7E1C27A792DF0084D40A /* LaunchScreen.storyboard */,
 				8FBD7E1F27A792DF0084D40A /* Info.plist */,
 				8FBD7E1727A792DD0084D40A /* Shift_Notes.xcdatamodeld */,
+				8F2EDF3D27A79C88005E9FCF /* NotesTitlesCell.swift */,
+				8F2EDF4127A79DC3005E9FCF /* MainViewController.swift */,
 			);
 			path = "Shift Notes";
 			sourceTree = "<group>";
@@ -126,6 +145,7 @@
 			children = (
 				8FBD7E3227A792DF0084D40A /* Shift_NotesUITests.swift */,
 				8FBD7E3427A792DF0084D40A /* Shift_NotesUITestsLaunchTests.swift */,
+				8F6FB99827A7960E004A577E /* FocusStart_iOS_TestTask_v4.pdf */,
 			);
 			path = "Shift NotesUITests";
 			sourceTree = "<group>";
@@ -235,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FBD7E1E27A792DF0084D40A /* LaunchScreen.storyboard in Resources */,
+				8F6FB99927A7960E004A577E /* FocusStart_iOS_TestTask_v4.pdf in Resources */,
 				8FBD7E1B27A792DF0084D40A /* Assets.xcassets in Resources */,
 				8FBD7E1627A792DD0084D40A /* Main.storyboard in Resources */,
 			);
@@ -261,10 +282,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FBD7E1327A792DD0084D40A /* ViewController.swift in Sources */,
+				8F2EDF3E27A79C88005E9FCF /* NotesTitlesCell.swift in Sources */,
+				8FC8248127A7F4320052FFBB /* Note+CoreDataClass.swift in Sources */,
 				8FBD7E0F27A792DD0084D40A /* AppDelegate.swift in Sources */,
 				8FBD7E1927A792DD0084D40A /* Shift_Notes.xcdatamodeld in Sources */,
 				8FBD7E1127A792DD0084D40A /* SceneDelegate.swift in Sources */,
+				8F2EDF4627A79E07005E9FCF /* MainTableViewController.swift in Sources */,
+				8F2EDF4227A79DC3005E9FCF /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +296,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F2EDF4727A79E07005E9FCF /* MainTableViewController.swift in Sources */,
+				8F2EDF4327A79DC3005E9FCF /* MainViewController.swift in Sources */,
+				8FC8248227A7F4320052FFBB /* Note+CoreDataClass.swift in Sources */,
+				8F2EDF3F27A79C88005E9FCF /* NotesTitlesCell.swift in Sources */,
 				8FBD7E2927A792DF0084D40A /* Shift_NotesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,7 +309,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FBD7E3327A792DF0084D40A /* Shift_NotesUITests.swift in Sources */,
+				8F2EDF4027A79C88005E9FCF /* NotesTitlesCell.swift in Sources */,
 				8FBD7E3527A792DF0084D40A /* Shift_NotesUITestsLaunchTests.swift in Sources */,
+				8FC8248327A7F4320052FFBB /* Note+CoreDataClass.swift in Sources */,
+				8F2EDF4827A79E07005E9FCF /* MainTableViewController.swift in Sources */,
+				8F2EDF4427A79DC3005E9FCF /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +478,7 @@
 				DEVELOPMENT_TEAM = UU6Y828634;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Shift Notes/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "ШИФТ Заметки";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -474,6 +507,7 @@
 				DEVELOPMENT_TEAM = UU6Y828634;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Shift Notes/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "ШИФТ Заметки";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
