@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F10C15727A920A700D71548 /* NoteEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F10C15627A920A700D71548 /* NoteEditViewController.swift */; };
+		8F10C15827A920A700D71548 /* NoteEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F10C15627A920A700D71548 /* NoteEditViewController.swift */; };
+		8F10C15927A920A700D71548 /* NoteEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F10C15627A920A700D71548 /* NoteEditViewController.swift */; };
+		8F10C15B27A93C1300D71548 /* NoteEditTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F10C15A27A93C1300D71548 /* NoteEditTextView.swift */; };
+		8F10C15C27A93C1300D71548 /* NoteEditTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F10C15A27A93C1300D71548 /* NoteEditTextView.swift */; };
+		8F10C15D27A93C1300D71548 /* NoteEditTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F10C15A27A93C1300D71548 /* NoteEditTextView.swift */; };
 		8F2EDF3E27A79C88005E9FCF /* NotesTitlesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2EDF3D27A79C88005E9FCF /* NotesTitlesCell.swift */; };
 		8F2EDF3F27A79C88005E9FCF /* NotesTitlesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2EDF3D27A79C88005E9FCF /* NotesTitlesCell.swift */; };
 		8F2EDF4027A79C88005E9FCF /* NotesTitlesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2EDF3D27A79C88005E9FCF /* NotesTitlesCell.swift */; };
@@ -49,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F10C15627A920A700D71548 /* NoteEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NoteEditViewController.swift; path = UI/NoteEditViewController.swift; sourceTree = "<group>"; };
+		8F10C15A27A93C1300D71548 /* NoteEditTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NoteEditTextView.swift; path = UI/NoteEditTextView.swift; sourceTree = "<group>"; };
 		8F2EDF3D27A79C88005E9FCF /* NotesTitlesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NotesTitlesCell.swift; path = UI/NotesTitlesCell.swift; sourceTree = "<group>"; };
 		8F2EDF4127A79DC3005E9FCF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = UI/MainViewController.swift; sourceTree = "<group>"; };
 		8F2EDF4527A79E07005E9FCF /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainTableViewController.swift; path = UI/MainTableViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +129,8 @@
 				8FBD7E0E27A792DD0084D40A /* AppDelegate.swift */,
 				8FBD7E1027A792DD0084D40A /* SceneDelegate.swift */,
 				8FBD7E1427A792DD0084D40A /* Main.storyboard */,
+				8F10C15A27A93C1300D71548 /* NoteEditTextView.swift */,
+				8F10C15627A920A700D71548 /* NoteEditViewController.swift */,
 				8F2EDF4527A79E07005E9FCF /* MainTableViewController.swift */,
 				8FBD7E1A27A792DF0084D40A /* Assets.xcassets */,
 				8FBD7E1C27A792DF0084D40A /* LaunchScreen.storyboard */,
@@ -282,8 +292,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F10C15B27A93C1300D71548 /* NoteEditTextView.swift in Sources */,
 				8F2EDF3E27A79C88005E9FCF /* NotesTitlesCell.swift in Sources */,
 				8FC8248127A7F4320052FFBB /* Note+CoreDataClass.swift in Sources */,
+				8F10C15727A920A700D71548 /* NoteEditViewController.swift in Sources */,
 				8FBD7E0F27A792DD0084D40A /* AppDelegate.swift in Sources */,
 				8FBD7E1927A792DD0084D40A /* Shift_Notes.xcdatamodeld in Sources */,
 				8FBD7E1127A792DD0084D40A /* SceneDelegate.swift in Sources */,
@@ -296,8 +308,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F10C15827A920A700D71548 /* NoteEditViewController.swift in Sources */,
 				8F2EDF4727A79E07005E9FCF /* MainTableViewController.swift in Sources */,
 				8F2EDF4327A79DC3005E9FCF /* MainViewController.swift in Sources */,
+				8F10C15C27A93C1300D71548 /* NoteEditTextView.swift in Sources */,
 				8FC8248227A7F4320052FFBB /* Note+CoreDataClass.swift in Sources */,
 				8F2EDF3F27A79C88005E9FCF /* NotesTitlesCell.swift in Sources */,
 				8FBD7E2927A792DF0084D40A /* Shift_NotesTests.swift in Sources */,
@@ -310,8 +324,10 @@
 			files = (
 				8FBD7E3327A792DF0084D40A /* Shift_NotesUITests.swift in Sources */,
 				8F2EDF4027A79C88005E9FCF /* NotesTitlesCell.swift in Sources */,
+				8F10C15927A920A700D71548 /* NoteEditViewController.swift in Sources */,
 				8FBD7E3527A792DF0084D40A /* Shift_NotesUITestsLaunchTests.swift in Sources */,
 				8FC8248327A7F4320052FFBB /* Note+CoreDataClass.swift in Sources */,
+				8F10C15D27A93C1300D71548 /* NoteEditTextView.swift in Sources */,
 				8F2EDF4827A79E07005E9FCF /* MainTableViewController.swift in Sources */,
 				8F2EDF4427A79DC3005E9FCF /* MainViewController.swift in Sources */,
 			);

@@ -20,6 +20,7 @@ class MainTableViewController: UITableViewController {
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
+    
     @IBAction func addButtonAction(_ sender: UIBarButtonItem) {
         let newNote = Note(context: context)
         newNote.dateCreated = Date(timeIntervalSinceNow: 0)
@@ -34,6 +35,17 @@ class MainTableViewController: UITableViewController {
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let editViewControl = storyboard?.instantiateViewController(withIdentifier: "noteEditView") as! NoteEditViewController
+        editViewControl.editingObject = notesList[indexPath.row]
+        print(notesList[indexPath.row].title)
+        show(editViewControl, sender: self)
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        loadData()
     }
     func loadData() {
         do {
@@ -108,7 +120,9 @@ class MainTableViewController: UITableViewController {
         }    */
     }
 
-
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//
+//    }
     /*
     // Override to support rearranging the table view.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
