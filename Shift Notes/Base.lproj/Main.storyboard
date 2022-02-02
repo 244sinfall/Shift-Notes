@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="koz-fQ-gPf">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,18 +13,16 @@
             <objects>
                 <viewController storyboardIdentifier="noteEditView" id="zLO-yH-gjl" customClass="NoteEditViewController" customModule="Shift_Notes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wo7-dY-ESG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Note title" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5Mi-YC-qr4">
-                                <rect key="frame" x="20" y="88" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Note title" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5Mi-YC-qr4">
+                                <rect key="frame" x="20" y="88" width="388" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="yes" smartInsertDeleteType="yes"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" usesAttributedText="YES" allowsEditingTextAttributes="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jQQ-qW-hhR" customClass="NoteEditTextView" customModule="Shift_Notes" customModuleProvider="target">
-                                <rect key="frame" x="20" y="130" width="374" height="732"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" usesAttributedText="YES" allowsEditingTextAttributes="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jQQ-qW-hhR">
+                                <rect key="frame" x="20" y="130" width="388" height="732"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Note fulltext...">
@@ -36,11 +34,20 @@
                                     </fragment>
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES" lookupSuggestion="YES"/>
                             </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="udI-ov-dkH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jQQ-qW-hhR" firstAttribute="leading" secondItem="udI-ov-dkH" secondAttribute="leading" constant="20" id="0iq-KZ-7Rn"/>
+                            <constraint firstItem="5Mi-YC-qr4" firstAttribute="leading" secondItem="udI-ov-dkH" secondAttribute="leading" constant="20" id="AzO-jy-v7C"/>
+                            <constraint firstItem="jQQ-qW-hhR" firstAttribute="top" secondItem="5Mi-YC-qr4" secondAttribute="bottom" constant="8" symbolic="YES" id="Smz-bc-5Rj"/>
+                            <constraint firstItem="5Mi-YC-qr4" firstAttribute="top" secondItem="udI-ov-dkH" secondAttribute="top" constant="44" id="ZVi-wj-8kj"/>
+                            <constraint firstItem="udI-ov-dkH" firstAttribute="bottom" secondItem="5Mi-YC-qr4" secondAttribute="bottom" constant="770" id="c9y-vF-2e5"/>
+                            <constraint firstItem="udI-ov-dkH" firstAttribute="trailing" secondItem="5Mi-YC-qr4" secondAttribute="trailing" constant="20" id="cL8-JO-nm9"/>
+                            <constraint firstItem="udI-ov-dkH" firstAttribute="bottom" secondItem="jQQ-qW-hhR" secondAttribute="bottom" constant="30" id="iat-G3-mey"/>
+                            <constraint firstItem="udI-ov-dkH" firstAttribute="trailing" secondItem="jQQ-qW-hhR" secondAttribute="trailing" constant="20" id="wKF-ao-lYE"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="fullTextEditor" destination="jQQ-qW-hhR" id="eFZ-az-wvR"/>
@@ -49,39 +56,44 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TS9-fG-chZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1531.8840579710145" y="-899.33035714285711"/>
+            <point key="canvasLocation" x="-1532.2429906542054" y="-899.35205183585322"/>
         </scene>
         <!--Ваши заметки-->
         <scene sceneID="OCa-K0-RqE">
             <objects>
                 <tableViewController storyboardIdentifier="mainNoteMenu" id="zGq-jy-9KG" customClass="MainTableViewController" customModule="Shift_Notes" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="wUH-2P-8Ik">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotesTitles" id="HmV-vX-dPS" customClass="NotesTitlesCell" customModule="Shift_Notes" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HmV-vX-dPS" id="NGi-YK-Oak">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="428" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Note Main Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yOO-jB-W8X">
-                                            <rect key="frame" x="20" y="11" width="124" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note Main Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yOO-jB-W8X">
+                                            <rect key="frame" x="20.000000000000007" y="12" width="123.66666666666669" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIv-uH-HbE">
-                                            <rect key="frame" x="310" y="11" width="82" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIv-uH-HbE">
+                                            <rect key="frame" x="334" y="14" width="74" height="18"/>
+                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                             <color key="textColor" systemColor="placeholderTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="yOO-jB-W8X" firstAttribute="top" secondItem="NGi-YK-Oak" secondAttribute="top" constant="12" id="aKM-h7-wNC"/>
+                                        <constraint firstItem="lIv-uH-HbE" firstAttribute="leading" secondItem="yOO-jB-W8X" secondAttribute="trailing" priority="1" constant="8" symbolic="YES" id="buD-dE-6fK"/>
+                                        <constraint firstAttribute="trailing" secondItem="lIv-uH-HbE" secondAttribute="trailing" constant="20" symbolic="YES" id="cFo-JU-vdJ"/>
+                                        <constraint firstItem="yOO-jB-W8X" firstAttribute="leading" secondItem="NGi-YK-Oak" secondAttribute="leading" constant="20" symbolic="YES" id="gli-i7-r9L"/>
+                                        <constraint firstItem="lIv-uH-HbE" firstAttribute="top" secondItem="NGi-YK-Oak" secondAttribute="top" constant="14" id="gvV-6M-LDz"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="noteDateCreatedLabel" destination="lIv-uH-HbE" id="9Lj-lJ-KqF"/>
@@ -104,14 +116,14 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c2Y-az-jo4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-277" y="-589"/>
+            <point key="canvasLocation" x="-278.9719626168224" y="-589.63282937365011"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="dsI-uG-Vpf">
             <objects>
                 <navigationController id="koz-fQ-gPf" customClass="MainViewController" customModule="Shift_Notes" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dQk-ri-NFu">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

@@ -12,3 +12,10 @@ import CoreData
 @objc(Note)
 public class Note: NSManagedObject {
 }
+
+@objc(NSAttributedStringTransformer)
+class NSAttributedStringTransformer: NSSecureUnarchiveFromDataTransformer {
+    override class var allowedTopLevelClasses: [AnyClass] {
+        return super.allowedTopLevelClasses + [NSAttributedString.self]
+    }
+}
